@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website in onderhoud | DeRuiterConstruction</title>
+    <meta
+      name="description"
+      content="De website van DeRuiterConstruction is tijdelijk in onderhoud. Kom later terug of neem direct contact op."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --text: #101828;
+        --muted: #475467;
+        --primary: #0f62fe;
+        --border: #dbe3ef;
+        --shadow: 0 10px 30px rgba(16, 24, 40, 0.08);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: "Manrope", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+        background:
+          radial-gradient(1200px 500px at 85% -10%, rgba(15, 98, 254, 0.08), transparent 60%),
+          radial-gradient(900px 420px at -5% 110%, rgba(15, 98, 254, 0.08), transparent 58%),
+          #f8fafc;
+        color: var(--text);
+      }
+
+      .maintenance-main {
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 28px 16px;
+      }
+
+      .maintenance-card {
+        width: min(740px, 100%);
+        border: 1px solid var(--border);
+        border-radius: 32px;
+        background: #fff;
+        box-shadow: var(--shadow);
+        padding: clamp(24px, 4vw, 44px);
+        text-align: center;
+      }
+
+      .maintenance-logo {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 18px;
+      }
+
+      .maintenance-logo img {
+        height: auto;
+        width: clamp(190px, 28vw, 300px);
+        display: block;
+      }
+
+      .maintenance-kicker {
+        margin: 0 0 10px;
+        font-size: 0.82rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: rgb(112, 122, 136);
+      }
+
+      h1 {
+        margin: 0 0 14px;
+        font-size: clamp(1.7rem, 4vw, 2.6rem);
+        line-height: 1.14;
+        color: rgb(44, 44, 44);
+      }
+
+      .maintenance-text {
+        margin: 0 0 12px;
+        font-size: 1rem;
+        line-height: 1.65;
+        color: var(--muted);
+      }
+
+      .maintenance-text a {
+        color: var(--text);
+        font-weight: 600;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+      }
+
+      .maintenance-text a:hover {
+        color: var(--primary);
+      }
+    </style>
+  </head>
+  <body class="maintenance-page">
+    <main class="maintenance-main">
+      <section class="maintenance-card" aria-labelledby="maintenance-heading">
+        <div class="maintenance-logo" aria-label="DeRuiterConstruction">
+          <img src="./assets/deruiterconstruction-logo-zwart.png" alt="DeRuiterConstruction" />
+        </div>
+
+        <p class="maintenance-kicker">Tijdelijke melding</p>
+        <h1 id="maintenance-heading">Deze website is momenteel in onderhoud</h1>
+        <p class="maintenance-text">
+          We werken aan verbeteringen om de website sneller en gebruiksvriendelijker te maken.
+          Probeer het later opnieuw.
+        </p>
+        <p class="maintenance-text">
+          Voor dringende vragen kunt u contact opnemen via
+          <a href="mailto:info@deruiterconstruction.nl">info@deruiterconstruction.nl</a> of
+          <a href="tel:+31613869939">+31 6 13869939</a>.
+        </p>
+
+      </section>
+    </main>
+  </body>
+</html>
